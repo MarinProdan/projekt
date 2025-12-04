@@ -5,17 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="fbc.css">
+    <script src="fbc.js"></script>
 </head>
 <body>
     <h1>FBC LIBEREC</h1>
     <nav class="navi">
-        <ul>
-            <li><a href="#">Menu</a></li>
-         <li><a href="#">Historie</a></li>
-         <li><a href="#">Tréninky</a></li>
-        </ul>
-    </nav>
+    <ul>
+        <li><a href="#" onclick="showSection('menu')">Menu</a></li>
+        <li><a href="#" onclick="showSection('historie')">Historie</a></li>
+        <li><a href="#" onclick="showSection('treninky')">Tréninky</a></li>
+        <li><a href="#" onclick="showSection('kontakty')">Kontakty</a></li>
+        <img src="orig_FBC_Liberec___PERMANETKA_2022_23_2022829163857.jpg" alt="FBC LIBEREC">
+    </ul>
+</nav>
+
+<!-- SECTIONS -->
+<div id="menu" class="section"></div>
+<div id="historie" class="section" style="display:none;">Historie klubu…</div>
+<div id="treninky" class="section" style="display:none;">Tréninky – rozpis…</div>
+<div id="kontakty" class="section" style="display:none;">Kontakty na klub…</div>
+
+<p>
     
+
+</p>
     
     
 </body>
