@@ -8,7 +8,6 @@ html, body {
     color: white;
 }
 
-/* Hlavní nadpis */
 h1 {
     margin: 20px;
     font-size: 32px;
@@ -67,4 +66,13 @@ h1 {
     h1 { font-size: 24px; margin: 12px; }
 }
 
+img {
+    display: block;
+
+    width: 10vh;
+    height: 10vh;
+}
+p {
+    text-align: center;
+}
 
