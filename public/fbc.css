@@ -1,0 +1,70 @@
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* Hlavní nadpis */
+h1 {
+    margin: 20px;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+/* Kontejner navigace - přilepený nahoře */
+.navi {
+    background-color: #111;       /* barva lišty */
+    padding: 10px 20px;
+    position: sticky;             /* přilepení nahoře při scrollu */
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.6);
+}
+
+/* Odstraníme výchozí styly seznamu a rozložíme položky horizontálně */
+.navi ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;                /* položky vedle sebe */
+    gap: 24px;                    /* mezera mezi položkami */
+    align-items: center;
+}
+
+/* Styl položek (li) - není nutné, ale užitečné pro případ vertikal alignu) */
+.navi li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Odkazy v menu */
+.navi a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+/* Hover efekt */
+.navi a:hover,
+.navi a:focus {
+    background: rgba(255,255,255,0.06);
+    color: #00aaff;
+    outline: none;
+}
+
+/* Pro menší obrazovky (základní responzivita) */
+@media (max-width: 600px) {
+    .navi ul {
+        gap: 12px;
+    }
+    h1 { font-size: 24px; margin: 12px; }
+}
+
+
