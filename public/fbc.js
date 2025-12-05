@@ -1,9 +1,10 @@
 function showSection(id) {
-    // Skryje všechny sekce
+
+    // skryje všechny sekce
     document.querySelectorAll('.section').forEach(sec => {
         sec.style.display = 'none';
     });
 
-    // Zobrazí jen tu vybranou
+    // zobrazí jen tu vybranou
     document.getElementById(id).style.display = 'block';
 }
