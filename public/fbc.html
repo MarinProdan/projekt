@@ -11,7 +11,6 @@
     <h1>FBC LIBEREC</h1>
     <nav class="navi">
     <ul>
-        <li><a href="#" onclick="showSection('menu')">Menu</a></li>
         <li><a href="#" onclick="showSection('historie')">Historie</a></li>
         <li><a href="#" onclick="showSection('treninky')">Tréninky</a></li>
         <li><a href="#" onclick="showSection('kontakty')">Kontakty</a></li>
@@ -19,18 +18,26 @@
     </ul>
 </nav>
 
-<div id="menu" class="section">
-        <h2>Menu</h2>
-        <ul>
-            <li><a href="#" onclick="showSection('historie')">Historie</a></li>
-            <li><a href="#" onclick="showSection('treninky')">Tréninky</a></li>
-            <li><a href="#" onclick="showSection('kontakty')">Kontakty</a></li>
-        </ul>
-    </div>
+<div id="menu" class="section"></div>
+<div id="historie" class="sectionH">
+     <h2>Historie klubu</h2>
+    <p>
+        <strong>FBC Liberec</strong> je florbalový klub z Liberce, který se dlouhodobě
+        věnuje rozvoji florbalu v regionu. Klub se zaměřuje na práci s mládeží
+        i dospělými kategoriemi a postupně si vybudoval pevné místo
+        na české florbalové scéně.
+    </p>
+    <p>
+        Díky systematickému tréninku, týmové spolupráci a podpoře fanoušků
+        se FBC Liberec stal respektovaným klubem, který klade důraz nejen
+        na sportovní výsledky, ale také na fair play a klubovou kulturu.
+    </p>
+</div>
 
-    <div id="historie" class="section" style="display:none;">Historie klubu…</div>
-    <div id="treninky" class="section" style="display:none;">Tréninky – rozpis…</div>
-    <div id="kontakty" class="section" style="display:none;">Kontakty na klub…</div>
+<div class="kontakty-container" id="kontakty-container"></div> 
+<h4>kontakty</h4>
+
+
     
     
 </body>
