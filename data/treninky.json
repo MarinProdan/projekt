@@ -1,0 +1,37 @@
+[
+  {
+    "kategorie": "Muži A",
+    "den": "Pondělí",
+    "cas": "19:00 – 20:30",
+    "misto": "SH Dukla Liberec",
+    "trener": "Jan Novák"
+  },
+  {
+    "kategorie": "Muži A",
+    "den": "Středa",
+    "cas": "18:30 – 20:00",
+    "misto": "SH Dukla Liberec",
+    "trener": "Jan Novák"
+  },
+  {
+    "kategorie": "Junioři",
+    "den": "Úterý",
+    "cas": "17:00 – 18:30",
+    "misto": "ZŠ Dobiášova",
+    "trener": "Petr Svoboda"
+  },
+  {
+    "kategorie": "Dorost",
+    "den": "Čtvrtek",
+    "cas": "16:30 – 18:00",
+    "misto": "ZŠ Ještědská",
+    "trener": "Martin Král"
+  },
+  {
+    "kategorie": "Mládež",
+    "den": "Pátek",
+    "cas": "15:30 – 16:45",
+    "misto": "ZŠ Ještědská",
+    "trener": "Lucie Malá"
+  }
+]
