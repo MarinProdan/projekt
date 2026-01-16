@@ -1,0 +1,162 @@
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    margin: 20px;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+/* Kontejner navigace - přilepený nahoře */
+.navi {
+    background-color: #111;       /* barva lišty */
+    padding: 10px 20px;
+    position: sticky;             /* přilepení nahoře při scrollu */
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.6);
+}
+
+/* Odstraníme výchozí styly seznamu a rozložíme položky horizontálně */
+.navi ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;                /* položky vedle sebe */
+    gap: 24px;                    /* mezera mezi položkami */
+    align-items: center;
+}
+
+/* Styl položek (li) - není nutné, ale užitečné pro případ vertikal alignu) */
+.navi li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Odkazy v menu */
+.navi a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+/* Hover efekt */
+.navi a:hover,
+.navi a:focus {
+    background: rgba(255,255,255,0.06);
+    color: #00aaff;
+    outline: none;
+}
+
+/* Pro menší obrazovky (základní responzivita) */
+@media (max-width: 600px) {
+    .navi ul {
+        gap: 12px;
+    }
+    h1 { font-size: 24px; margin: 12px; }
+}
+
+img {
+    display: block;
+
+    width: 10vh;
+    height: 10vh;
+}
+p {
+    text-align: justify;
+}
+
+
+.section {
+    display: none;           /* všechny sekce skryté */
+    max-width: 900px;
+    margin: 40px auto;           
+    padding: 30px;
+    background-color: #111;       
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    color: white;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.section h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #00aaff;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.section p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.section strong {
+    color: #00aaff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* kontaktní karty */
+.kontakt-karta {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.kontakt-karta h3 {
+    margin: 0 0 8px 0;
+    color: #00aaff;
+}
+
+.kontakt-karta p {
+    margin: 4px 0;
+    font-size: 15px;
+    color: #ccc;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* kontaktní karty */
+.trenink-karta {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.trenink-karta h3 {
+    margin: 0 0 8px 0;
+    color: #00aaff;
+}
+
+.trenink-karta p {
+    margin: 4px 0;
+    font-size: 15px;
+    color: #ccc;
+}
+
+
